@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <PackageId>NetLah.Extensions.CommandLineUtils</PackageId>
     <PackageTags>parsing;commandlineutils;commandline-utils;commandline;command-line;commandlinearguments;command-line-arguments;args;dotnet;aspnetcore</PackageTags>
-    <TargetFramework>netstandard1.3</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <Description>Command line parsing for .NET</Description>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>../NetLah.snk</AssemblyOriginatorKeyFile>
