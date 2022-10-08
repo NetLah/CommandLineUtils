@@ -5,7 +5,7 @@
 using System;
 using System.IO;
 
-namespace Microsoft.Extensions.CommandLineUtils
+namespace NetLah.Extensions.CommandLineUtils
 {
     public class AnsiConsole
     {

@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Microsoft.Extensions.CommandLineUtils
+namespace NetLah.Extensions.CommandLineUtils
 {
     public class CommandLineApplication
     {

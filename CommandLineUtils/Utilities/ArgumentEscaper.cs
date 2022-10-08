@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Microsoft.Extensions.CommandLineUtils
+namespace NetLah.Extensions.CommandLineUtils
 {
     /// <summary>
     /// A utility for escaping arguments for new processes.

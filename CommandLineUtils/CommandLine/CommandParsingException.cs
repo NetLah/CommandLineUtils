@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Microsoft.Extensions.CommandLineUtils
+namespace NetLah.Extensions.CommandLineUtils
 {
     public class CommandParsingException : Exception
     {

@@ -5,10 +5,10 @@
 using System;
 using System.IO;
 using System.Linq;
-using Microsoft.Extensions.CommandLineUtils;
+using NetLah.Extensions.CommandLineUtils;
 using Xunit;
 
-namespace Microsoft.Extensions.Internal
+namespace NetLah.Extensions.CommandLineUtils.Test
 {
     public class CommandLineApplicationTests
     {

@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.CommandLineUtils;
+﻿using NetLah.Extensions.CommandLineUtils;
 
 // SampleCommandLine.exe [hello <fullname>] [-?]
 CommandLineApplication commandLineApplication =

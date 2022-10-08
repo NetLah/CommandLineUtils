@@ -3,7 +3,7 @@
 // See the LICENSE file in the project root for more information.
 
 
-namespace Microsoft.Extensions.CommandLineUtils
+namespace NetLah.Extensions.CommandLineUtils
 {
     public enum CommandOptionType
     {
