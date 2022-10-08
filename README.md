@@ -24,7 +24,7 @@
 
 ```cs
 CommandLineApplication commandLineApplication =
-    new(throwOnUnexpectedArg: false)
+    new(throwOnUnexpectedArg: true)
     {
         Name = "SampleCommandLine.exe",
         FullName = "SampleCommandLine: greeting a fullname"
@@ -76,9 +76,9 @@ commandLineApplication.Execute(args);
 
 static void Greet(IEnumerable<string> values) => Console.WriteLine($"Hello {string.Join(" ", values)}!");
 
-static string GetLongVersion() => "1.2.3";
+static string GetShortVersion() => "1.2.3";
 
-static string GetShortVersion() => "v1.2.3+456abcd";
+static string GetLongVersion() => "v1.2.3+456abcd";
 ```
 
 ## Play around
@@ -88,7 +88,7 @@ static string GetShortVersion() => "v1.2.3+456abcd";
 To know the available commands and options `SampleCommandLine.exe --help`
 
 ```txt
-SampleCommandLine: greeting a fullname v1.2.3+456abcd
+SampleCommandLine: greeting a fullname 1.2.3
 
 Usage: SampleCommandLine.exe [options] [command]
 
@@ -107,7 +107,7 @@ Use "SampleCommandLine.exe [command] --help" for more information about a comman
 To know the available arguments and options of a command `SampleCommandLine.exe hello --help`
 
 ```txt
-Greeting a fullname v1.2.3+456abcd
+Greeting a fullname 1.2.3
 
 Usage: SampleCommandLine.exe hello [arguments] [options]
 
@@ -132,7 +132,7 @@ Command line `SampleCommandLine.exe --version`
 
 ```txt
 SampleCommandLine: greeting a fullname
-1.2.3
+v1.2.3+456abcd
 ```
 
 ## Project origin and status

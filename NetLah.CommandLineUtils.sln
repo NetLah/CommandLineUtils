@@ -20,6 +20,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandLineUtils", "Command
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandLineUtils.Test", "CommandLineUtils.Test\CommandLineUtils.Test.csproj", "{3A37C58E-F6D6-49E7-B92A-A1D290CAE22C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandLineApp", "samples\CommandLineApp\CommandLineApp.csproj", "{AECAECE7-0B96-4B77-8C00-1DA47E586C64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,12 +40,17 @@ Global
 		{3A37C58E-F6D6-49E7-B92A-A1D290CAE22C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A37C58E-F6D6-49E7-B92A-A1D290CAE22C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A37C58E-F6D6-49E7-B92A-A1D290CAE22C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AECAECE7-0B96-4B77-8C00-1DA47E586C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECAECE7-0B96-4B77-8C00-1DA47E586C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECAECE7-0B96-4B77-8C00-1DA47E586C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECAECE7-0B96-4B77-8C00-1DA47E586C64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{89332B59-8B68-48EB-AC14-D3F20E2FCEDE} = {71182A53-B008-4854-BED1-FF3B6C6AF58E}
+		{AECAECE7-0B96-4B77-8C00-1DA47E586C64} = {71182A53-B008-4854-BED1-FF3B6C6AF58E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45F2C7D7-F576-46B5-9539-E567C5CC7AD6}

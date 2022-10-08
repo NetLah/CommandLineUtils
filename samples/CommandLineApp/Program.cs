@@ -1,11 +1,14 @@
-﻿using NetLah.Extensions.CommandLineUtils;
+﻿using NetLah.Diagnostics;
+using NetLah.Extensions.CommandLineUtils;
 
-// SampleCommandLine.exe [hello <fullname>] [-?]
+var libAsmInfo = new AssemblyInfo(typeof(CommandLineApplication).Assembly);
+
+// CommandLineApp.exe [hello <fullname>] [-?]
 CommandLineApplication commandLineApplication =
     new(throwOnUnexpectedArg: true)
     {
-        Name = "SampleCommandLine.exe",
-        FullName = "SampleCommandLine: greeting a fullname"
+        Name = "CommandLineApp.exe",
+        FullName = "CommandLineApp: greeting a fullname"
     };
 
 CommandArgument? names = null;
@@ -54,6 +57,6 @@ commandLineApplication.Execute(args);
 
 static void Greet(IEnumerable<string> values) => Console.WriteLine($"Hello {string.Join(" ", values)}!");
 
-static string GetShortVersion() => "1.2.3";
+string GetShortVersion() => typeof(CommandLineApplication).Assembly.GetName().Version?.ToString() ?? "1.0.0";
 
-static string GetLongVersion() => "v1.2.3+456abcd";
+string GetLongVersion() => libAsmInfo.InformationalVersion;
