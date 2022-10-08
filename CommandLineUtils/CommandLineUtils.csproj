@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>NetLah.Extensions.CommandLineUtils</PackageId>
+    <PackageTags>parsing;commandlineutils;commandline-utils;commandline;command-line;commandlinearguments;command-line-arguments;args;dotnet;aspnetcore</PackageTags>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <Description>Command line parsing for .NET</Description>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>../NetLah.snk</AssemblyOriginatorKeyFile>
+    <RootNamespace>NetLah.Extensions.CommandLineUtils</RootNamespace>
+    <AssemblyName>NetLah.Extensions.CommandLineUtils</AssemblyName>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE" Pack="true" PackagePath="\" />
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
